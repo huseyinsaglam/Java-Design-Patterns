@@ -1,0 +1,15 @@
+- Bir nesne yaratmak icin bir arayuz tanimla, fakat hangi sinifin nesnesinin oluşturulacagina alt siniflar karar versin..
+- Factory Method sinifi alt siniflara otelenmesine izin verir.
+
+Cozum olarak factory method
+- Nesnelerin nerede yaratilacagi sorununu çozer
+- Nesnelerin yaratilmasini soyutlar ve bu isi istemci kodlarindan çikarip "uretici" yada "factory" methodlara devreder.
+- Factory Method, nesnelerin yaratilmasindan sorumlu bir methoddur öyle ki bir arayuzde tanimlar ve alt siniflarda gerceklestirilir
+
+
+- image solutionCD2 = farklı farkli parametreler ile alt siniflar olusturmak istedigimiz zaman
+ kullanacagimiz Factorylerin UML diagramdir
+
+- Factory hedefi sadece bir nesneyi yaratmayi soyutlamaktir.. Cunku subsiniflar hepsi ayri ayri nesneyi yaratsinlar
+- Bu yaklasimin en temel problemi, her yeni sınıf icin, Ornegin Employee sinifi icin EngineerFactory gibi yeni bir
+ Factory alt sinifina hatta ayri arayuzler olmasi durumunda yeni bir arayuze de ihtiyac duyulmasidir
