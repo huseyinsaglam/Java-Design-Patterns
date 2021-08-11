@@ -8,4 +8,8 @@ public class Deneme {
     public static void selamBir() {
         System.out.println("Selam commit bir");
     }
+
+    public static void selamiki() {
+        System.out.println("Selam commit iki");
+    }
 }
