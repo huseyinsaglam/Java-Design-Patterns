@@ -1,0 +1,4 @@
+Amac = Prototip bir nesneyi kullanarak yaratılacak nesneleri belirlemek ve yeni nesneleri, prototipi kopyalayarak
+olusturmak
+
+Prototip -> ornek nesne olarakda anlayabiliriz
