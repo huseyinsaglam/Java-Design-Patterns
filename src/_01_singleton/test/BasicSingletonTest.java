@@ -1,3 +1,4 @@
+/*
 package _01_singleton.test;
 
 import _01_singleton.BasicSingleton;
@@ -27,3 +28,4 @@ public class BasicSingletonTest {
 
     }
 }
+*/
