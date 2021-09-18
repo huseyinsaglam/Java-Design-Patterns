@@ -1,7 +1,6 @@
-/*
-package _01_singleton.test;
+package _01_singletonn.test;
 
-import _01_singleton.BasicSingleton;
+import _01_singletonn.BasicSingleton;
 
 public class BasicSingletonTest {
     public static void main(String[] args) {
@@ -28,4 +27,3 @@ public class BasicSingletonTest {
 
     }
 }
-*/

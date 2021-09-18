@@ -1,6 +1,6 @@
-package _01_singleton.test;
+package _01_singletonn.test;
 
-import _01_singleton.LazySingleton;
+import _01_singletonn.LazySingleton;
 
 public class LazySingletonTest extends Thread {
     public static void main(String[] args) {

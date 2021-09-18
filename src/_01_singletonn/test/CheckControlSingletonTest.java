@@ -1,6 +1,6 @@
-package _01_singleton.test;
+package _01_singletonn.test;
 
-import _01_singleton.CheckControlSingleton;
+import _01_singletonn.CheckControlSingleton;
 
 public class CheckControlSingletonTest extends Thread {
     public static void main(String[] args) {

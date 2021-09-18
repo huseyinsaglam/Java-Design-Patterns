@@ -1,4 +1,4 @@
-package _01_singleton;
+package _01_singletonn;
 
 public class BasicSingleton {
 

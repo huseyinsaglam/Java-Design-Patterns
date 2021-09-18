@@ -1,6 +1,6 @@
-package _01_singleton.test;
+package _01_singletonn.test;
 
-import _01_singleton.BillPughSingleton;
+import _01_singletonn.BillPughSingleton;
 
 public class BillPughSingletonTest extends Thread {
 
