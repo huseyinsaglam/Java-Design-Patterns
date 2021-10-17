@@ -1,0 +1,17 @@
+Flyweight Design Pattern
+1-  Bu kalıbın amacı yapıca aynı nesneleri bellekte çokça oluşturmak yerine her bir nesnenin bir kopyasını oluşturmak ve
+ oluşturulan nesneleri ortak bir noktada tutup paylaştırma işlemini yerine getirmektir.
+ Yani tekrar eden aynı nesneleri gruplayarak hafızada çok fazla yer kaplamaması için ,hafıza kullanımını minumuma indirmektir.
+2- Her bir Flyweight nesnesi temel olarak iki veri kümesinden oluşur
+
+intrinsic ( durum-bağımsız (state-independent) ) => Bu kısımda, çalışma zamanındaki tüm Flyweight nesneleri tarafından saklanan paylaşılmış alanlar yer almaktadır.
+extrinsic (durum-bağımlı (state-dependent)) => Bu kümedeki veriler ise istemci tarafından saklanır, hesap edilir ve Flyweight nesne örneğine, yine Flyweight'in bir operasyonu yardımıyla aktarılırlar.
+
+ Instrinsic özellikler nesne havuzdan alınırken hazır verilirken extrinsic özellikler client tarafından set edilir.
+
+3- Yani kısaca . . .
+
+    Bir nesne üretmek istediğin zaman FlyweightFactory üzerinden üret.
+    Eğer nesne flyweightFactroy içerisindeki havuzda yer alıyorsa nesneyi sana bu havuzdan döndürecektir. Yok ise önce havuza ekleyip sonra döndürecektir.
+    Havuzdaki nesnelerin common olanları havuzdan alındığı şekilde kullanılır. Spesifikasyon gerekenleri de havuzdan alındıktan sonra customize edilir.
+
