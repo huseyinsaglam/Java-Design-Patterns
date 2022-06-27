@@ -13,16 +13,12 @@ public class CheckControlSingleton {
 
 
     public static CheckControlSingleton getLazySingleton() {
-
-        if (controlSingleton == null) {
             synchronized (CheckControlSingleton.class) {
-
                 if (controlSingleton == null) {
                     controlSingleton = new CheckControlSingleton();
-
                 }
             }
-        }
+
         return controlSingleton;
     }
 
