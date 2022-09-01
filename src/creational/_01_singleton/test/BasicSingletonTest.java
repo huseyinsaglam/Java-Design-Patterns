@@ -1,6 +1,6 @@
-package _01_singletonn.test;
+package creational._01_singleton.test;
 
-import _01_singletonn.BasicSingleton;
+import creational._01_singleton.pattern.BasicSingleton;
 
 public class BasicSingletonTest {
     public static void main(String[] args) {

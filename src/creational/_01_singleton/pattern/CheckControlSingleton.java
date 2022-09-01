@@ -1,4 +1,4 @@
-package _01_singletonn;
+package creational._01_singleton.pattern;
 
 public class CheckControlSingleton {
 
@@ -13,11 +13,14 @@ public class CheckControlSingleton {
 
 
     public static CheckControlSingleton getLazySingleton() {
+
+        if (controlSingleton == null){
             synchronized (CheckControlSingleton.class) {
                 if (controlSingleton == null) {
                     controlSingleton = new CheckControlSingleton();
                 }
             }
+        }
 
         return controlSingleton;
     }
