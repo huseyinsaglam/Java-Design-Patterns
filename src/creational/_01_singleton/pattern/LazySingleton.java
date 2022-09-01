@@ -1,4 +1,4 @@
-package _01_singletonn;
+package creational._01_singleton.pattern;
 
 public class LazySingleton {
 

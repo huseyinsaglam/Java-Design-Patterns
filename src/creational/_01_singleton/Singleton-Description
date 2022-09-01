@@ -1,0 +1,76 @@
+Singleton Design Pattern
+Amac = Tek Nesne olusturmak ve yaratmak
+1- Tek nesne olusturmak ve yapabilmek icin constructor kilit noktadan baslamak gerekir.
+Constructor private olmalı dır ve o nesne nin icerisinde obje yaratılmalıdır.
+Nesne icerisinde obje yaratılırken Obje olusturmadan Class uzerinden olusturulmalıdır.
+Class uzerinden olusturulurken Static metot uzerinden obje yaratacak sekilde olusturulmalıdır.
+
+// asadaki tanımlama ile bir tane basic singleton olusturulabilir.
+// ilk once classlar yuklenirken static degiskenler yuklenir sonrasında static metotlar yuklenir.
+// asadaki tanımlamanın dezavantajı EAGER olmasıdır. Bu nesneyi hiç kullanmamıs olsakda olusmus olur.
+// Bunun onune gecmemiz gerekir. Asagıda bahsedecegim Lazy yontem ile onune gecebiliriz.
+    private static BasicSingleton basicSingleton = new BasicSingleton();        // 1.adım calısır
+
+    private BasicSingleton(){                               // 2.adım calısır
+    };
+
+    public static BasicSingleton getBasicSingleton() {          // 3.adım cagıran metot var ise calısır
+        return basicSingleton;
+    }
+
+2- LAZY TANIMLAMA
+
+   private static LazySingleton lazySingleton;
+
+       private LazySingleton() {
+       }
+
+        public static LazySingleton getLazySingleton() {
+
+            if (lazySingleton == null) {
+                lazySingleton = new LazySingleton();
+
+            }
+            return lazySingleton;
+        }
+
+Burada tanımlamada getLazySingleton() metotu cagrıldıgı durumlarda kontrol saglama yaparak Nesneyi olusturma yapabiliriz
+Bunun dezavantajı ise multi thread kullanılırken sıkıntı yasarız.
+// Bunun onune gecmemiz gerekir. Asagıda bahsedecegim synchronized anahtar kelimesi ile onune gecebiliriz.
+
+3- CHECK KONTROL
+private static CheckControlSingleton controlSingleton;
+    private CheckControlSingleton() {
+    }
+
+    public static CheckControlSingleton getLazySingleton() {
+            synchronized (CheckControlSingleton.class) {
+                if (controlSingleton == null) {
+                    controlSingleton = new CheckControlSingleton();
+                }
+            }
+
+        return controlSingleton;
+    }
+
+Burada yeni obje olusturan if blogun basına synchronized anahtar kelimesi kullanarak multi thread engelleme
+yapmıs oluruz. Yalnız Burada boyle kullanırken yavas calısmıs olabilir metot asagıda yazdıgım sekilde duzenleme yapılırken
+kullanırsak daha verimli ve perfonmaslı kullanmıs oluruz.
+
+    public static CheckControlSingleton getLazySingleton() {
+
+        if (controlSingleton == null){
+            synchronized (CheckControlSingleton.class) {
+                if (controlSingleton == null) {
+                    controlSingleton = new CheckControlSingleton();
+                }
+            }
+        }
+
+        return controlSingleton;
+    }
+
+Buradaki kullanımda controlSingleton null ve hic olusmamıs ise lock lama yapmıs oluruz. Daha onceden olusmus ise lock lama
+yapma yonteminden kacmıs oluruz.
+
+

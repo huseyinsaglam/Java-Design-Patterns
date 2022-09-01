@@ -1,0 +1,3 @@
+creational => nesne oluşturulurken bazı problemler ile karşılaşıyoruz buna çözüm bulmaya çalışır
+structural => nesneler arası ilişkisel arasında çıkan problemlere çözüm bulmaya çalışır
+behavioural => nesnelerin çalışma zamanında davranışlarında degişiklik yaparken karşılaşılan problemlere çözüm bulmaya çalışır
