@@ -1,9 +1,0 @@
-Abstract Factory, tek nesne yerine , nesne ailesi oluşturmak üzere kullanılan kalıptır.
-
-Abstract Factory bir sınıftır, Factory Method ise bir methoddur
-Factory Method tek bir nesnenin, Abstract Factory birden fazla nesnenin soyutlamasını saglar
-Bu amaçla Abstract FActory birden Fazla Factory Method' a sahiptir.
-
-
-Kalıbın açıklamasında geçen birbiriyleri ilgili ya da birbirine bagımlı nesne ailesi birbiriyle ilgili ürün ailesi ile
-kastedilen birlikte kullanılacak şekilde tasarlanmış ve bunun uygulandıgı nesnelerdir.
