@@ -1,0 +1,32 @@
+- Nesnelerin nerede yaratilacagi sorununu çozer
+- Factory Method, nesnelerin yaratilmasindan sorumlu bir methoddur öyle ki arayuz tanımlar
+  ve nesnelerin yaratılmasını alt sınıflar gerceklestirir
+
+public class FactoryPattern {
+
+    // nesnelerin yaratilmasindan sorumlu bir methoddur
+    // oyle ki bir arayuz tanımlar ve nesnelerin yaratılmasını alt sınıflar gerceklestirir
+    public static Shape getShapeDraw(String shape){
+
+        if (!shape.isEmpty()){
+            if (shape.equalsIgnoreCase("Circle")){
+                return new Circle();
+            }
+            else if (shape.equalsIgnoreCase("Square")){
+                return new Square();
+            }
+            else {
+                System.out.println("Lutfen gecerli bir sekil giriniz");
+            }
+        }
+        return null;
+    }
+}
+
+Not : Sıkıntı ise Shape arayüzünü implemete eden 100 tane nesne yi if-elseif ler le olusturmak sıkıntılı olur.
+Bunu ise abstract factory metotu ile cozebiliriz.
+s
+- Nesnelerin yaratilmasini soyutlar ve bu isi istemci kodlarindan çikarip "uretici" yada "factory" methodlara devreder.
+- Factory hedefi sadece bir nesneyi yaratmayi soyutlamaktir.. Cunku subsiniflar hepsi ayri ayri nesneyi yaratsinlar
+- Bir nesne yaratmak icin bir arayuz tanimla, fakat hangi sinifin nesnesinin oluşturulacagina alt siniflar karar versin..
+- Factory Method sinifi alt siniflara otelenmesine izin verir.
