@@ -1,0 +1,24 @@
+- Abstract Factory birden fazla nesnenin soyutlamasını saglar
+- Abstract Factory deseninde, sınıflarını açıkça belirtmeden ilgili nesnelerin bir fabrikasını oluşturmaktan bir arayüz sorumludur
+
+// nesnelerin bir fabrikasını oluşturmaktan bir arayüz
+// Abstract Factory birden fazla nesnenin soyutlamasını saglar
+public interface AbstractFactory {
+
+    Shape getShapeDraw();
+}
+
+public class SquareFactory implements AbstractFactory {
+    @Override
+    public Shape getShapeDraw() {
+        return new Square();
+    }
+}
+
+public class CircleFactory implements AbstractFactory {
+    @Override
+    public Shape getShapeDraw() {
+        return new Circle();
+    }
+}
+
