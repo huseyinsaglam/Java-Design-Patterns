@@ -1,0 +1,3 @@
+BuilderDesignerPattern
+- Nesneleri adım adım olusturmaya yarayan nesnedir
+nesneyi olustururken constructor da alan parametreleri adım adım olusturmaya yarayan nesnedir.
