@@ -1,6 +1,7 @@
-package _04_protoType.solution.prototype;
+package creational._05_prototype.pojo;
 
-import _04_protoType.solution.pojo.Person;
+
+import creational._05_prototype.pattern.Person;
 
 public class Manager extends Person {
 
