@@ -1,13 +1,10 @@
-package _04_protoType.solution.pojo;
+package creational._05_prototype.pattern;
 
 public abstract class Person implements Cloneable {
 
     private int id;
     private String name;
     private String surname;
-
-
-
 
     public Person(int id, String name, String surname) {
         super();
@@ -34,7 +31,6 @@ public abstract class Person implements Cloneable {
         this.surname = surname;
     }
 
-
     @Override
     public String toString() {
         return "Person [id=" + id + ", name=" + name + ", surname=" + surname + "]";
@@ -45,12 +41,4 @@ public abstract class Person implements Cloneable {
         // TODO Auto-generated method stub
         return super.clone();
     }
-
-
-
-
-
-
-
-
 }

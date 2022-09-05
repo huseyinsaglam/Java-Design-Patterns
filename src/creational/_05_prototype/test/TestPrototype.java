@@ -1,11 +1,12 @@
-package _04_protoType.solution.test;
+package creational._05_prototype.test;
 
-import _04_protoType.solution.pojo.Person;
-import _04_protoType.solution.prototype.Employee;
-import _04_protoType.solution.prototype.Manager;
+import creational._05_prototype.pattern.Person;
+import creational._05_prototype.pojo.Employee;
+import creational._05_prototype.pojo.Manager;
 
-public class TestMain {
-    public static void main(String[] args)  throws CloneNotSupportedException{
+public class TestPrototype {
+
+    public static void main(String[] args) throws CloneNotSupportedException {
 
         Person employee = new Employee(1, "huseyin", "saglam");
 
@@ -37,5 +38,6 @@ public class TestMain {
         managerCopy2.setSirket("Saglam Manager Sirketi");
         managerCopy2.setAddress("Kizilay - Ankara");
         System.out.println(managerCopy2.toString());
+
     }
 }
