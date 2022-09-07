@@ -1,8 +1,0 @@
-============== ADAPTER DESIGN PATTERN ==============
-Amac= Bir sınıfın arayüzünü, bir başka sınıfın bekledigi arayüze çevir. Adaptör, uyumsuz arayüzleri sebebiyle çalışamayacak sınıfların bir arada çalışmasını saglar.
-
-
-Kullanım amacı;
-* İki uyumsuz interface’i beraber kullanmamızı sağlar.
-* Daha önce yazılmış olan kodları düzenlemek zorunda kalmayız. Sonuçta ilgili kodun daha önce çalıştığını kabul ediyoruz
-* Adapte edeceğimiz class üzerinde değişiklik yapmadığımız için uygulama içerisinde kullanılmış olduğu herhangi bir yerde değişiklik yapmamız gerekmez
