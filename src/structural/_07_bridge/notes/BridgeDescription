@@ -1,0 +1,24 @@
+Bridge Design Pattern
+- Bridge, bir soyutlamayı uygulanmasından ayırmamız gerektiğinde kullanılır, böylece ikisi birbirinden bağımsız olarak değişebilir.
+- Bu tür tasarım deseni, aralarında bir köprü yapısı sağlayarak uygulama sınıfını ve soyut sınıfı birbirinden ayırdığı için
+yapısal model altına girer.
+
+public abstract class BridgeDesign {
+
+    protected MuzikCalar muzikCalar;    // interface
+    protected SesCihazi sesCihazi;      // interface
+}
+
+Buradaki BridgeDesign yaralanarak MuzikCalar ve SesCihazi farklı farklı nesneler alarak bagımsız tasarım yapmış oluruz.
+
+Ornegin MuzikDinlemek istiyoruz. Asadagi BridgeDesign tasarım kalıbından yaralanarak muzikCalar fiz sescihazı olarak
+ise Kulaklık secerek bir uygulamacihazı yapmıs oluyoruz.
+
+public class BilgisayarFK extends BridgeDesign {
+
+    public BilgisayarFK() {
+        muzikCalar = new Fizy();
+        sesCihazi = new Kulaklik();
+    }
+}
+
