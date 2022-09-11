@@ -1,6 +1,6 @@
-package structural._08_composite.example1.testComposite;
+package structural._08_composite.testComposite;
 
-import structural._08_composite.example1.pojo.CompositePatternEmployee;
+import structural._08_composite.pojo.CompositePatternEmployee;
 
 public class TestComposite {
 

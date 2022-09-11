@@ -1,4 +1,4 @@
-package structural._08_composite.example1.pojo;
+package structural._08_composite.pojo;
 
 import java.util.ArrayList;
 import java.util.List;

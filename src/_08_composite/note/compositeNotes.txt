@@ -1,3 +1,0 @@
-========= COMPOSITE DESIGN PATTERN ==========
-Amaç = Parça-Bütün ilişkisini göstermek için nesneleri agaç yapılarında ifade et.
-Bileşik nesne, istemcilerin nesneleri ve bu nesnelerin bileşiklerini aynı şekilde işlemesine izin verir.
