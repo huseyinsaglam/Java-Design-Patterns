@@ -1,0 +1,27 @@
+========= COMPOSITE DESIGN PATTERN ==========
+Amaç = Parça-Bütün ilişkisini göstermek için nesneleri agaç yapılarında ifade et.
+
+ornek kod objesi
+
+public class CompositePatternEmployee {
+
+    // parca
+    private String name;
+    private String dept;
+    private int salary;
+    // butun
+    private List<CompositePatternEmployee> subordinates;
+
+    // ekle
+    public void add(CompositePatternEmployee e) {
+        subordinates.add(e);
+    }
+    // sil
+    public void remove(CompositePatternEmployee e) {
+        subordinates.remove(e);
+    }
+    // hepsini goruntule
+    public List<CompositePatternEmployee> getSubordinates(){
+        return subordinates;
+    }
+}
