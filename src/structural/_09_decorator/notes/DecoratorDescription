@@ -1,0 +1,7 @@
+********************* Decorator Design Pattern *********************
+- Decorator pattern, varolan bir nesnenin yapısını değiştirmeden varolan bir nesneye yeni (functional/ozellikler/işlevler) eklemesine olanak tanır
+//  varolan bir nesnenin yapısı => Shape nesnesi implement eden Circle, Rectange
+
+- Bu tür bir tasarım deseni, mevcut sınıfı extend görevi gördüğü için yapısal desen altında gelir.
+- Bu pattern, özgün sınıfı saran ve sınıf yöntemleri imzasını sağlam tutan ek işlevler sağlayan bir Decorator sınıfı oluşturur.
+- Şekil sınıfını değiştirmeden bir şekli bir renkle süsleyeceğimiz örnekle Decorator deseninin kullanımını gösteriyoruz
