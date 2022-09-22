@@ -1,0 +1,6 @@
+********************* Facade Design Pattern *********************
+- Facade pattern, sistemin karmaşıklıklarını gizler ve istemcinin sisteme erişebileceği istemciye bir arabirim sağlar
+- Bu tür bir tasarım deseni, karmaşıklıklarını gizlemek için mevcut sisteme bir arayüz eklediğinden yapısal desen altında gelir
+- Bu pattern, istemci ve temsilci çağrılarının varolan sistem sınıflarının yöntemlerine gerektirdiği basitleştirilmiş
+  yöntemleri sağlayan tek bir sınıfı içerir
+- Dezavantajı = coupling
