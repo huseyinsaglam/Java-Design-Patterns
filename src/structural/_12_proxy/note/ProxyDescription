@@ -1,0 +1,4 @@
+************************* Proxy Design Pattern *************************
+- Proxy deseninde, bir sınıf başka bir sınıfın  fonksiyonlarını temsil eder.
+- Bu tür bir tasarım deseni yapısal desen altında gelir
+- Proxy modelinde, fonksiyon larını dış dünyaya arayuzu için orijinal nesneye sahip bir nesne oluştururuz.
