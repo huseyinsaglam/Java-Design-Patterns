@@ -1,0 +1,11 @@
+************************* Flyweight Design Pattern *************************
+- Flyweight pattern, öncelikle oluşturulan nesne sayısını azaltmak ve performansı artırmak için kullanılır
+- Bu desen, nesne sayısını azaltmanın ve böylece uygulamanın nesne yapısını iyileştirmenin yollarını sağladığından,
+  bu tür tasarım deseni yapısal desen altında gelir
+- Flyweight pattern, halihazırda var olan benzer türdeki nesneleri depolayarak yeniden kullanmaya çalışır ve
+  eşleşen bir nesne bulunamadığında yeni nesne oluşturur
+- Benzer türdeki nesne ise nesne nin aldıgı bagımlı constructor degerinden bakarak tespit edebiliriz
+    // color Circle bagımlı bir nesne aynı color bagımlı olan birden fazla nesne nin onune gecmeye calisiyoruz
+    public Circle(String color){
+        this.color = color;
+    }
