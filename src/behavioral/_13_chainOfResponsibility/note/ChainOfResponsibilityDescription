@@ -1,0 +1,44 @@
+**************** Chain of Responsibility Pattern ****************
+- Sorumluluk zinciri modeli bir istek için alıcı nesneler zinciri oluşturur.
+- Bu pattern, isteğin türüne bağlı olarak bir isteğin göndereni ve alıcısını birbirinden ayırır.
+- Bu örüntü behavioral(davranış) kalıpları altında gelir
+- Bu modelde, normalde her alıcı başka bir alıcıya referans içerir.
+- Bir nesne isteği işleyemezse, aynı şeyi bir sonraki alıcıya vb. iletir.
+
+
+Kod Example => (Ardisik veya birbiri ile zincirli nesne diyebiliriz)
+
+public abstract class  ChainOfResponsibilityPattern {
+    EnumIl enumIl;   // suan ki il
+    ChainOfResponsibilityPattern nextIl;            // bir sonraki gidecek yere olan kargo
+}
+
+
+    public static ChainOfResponsibilityPattern getHsKargoSirketi(){
+
+        Istanbul istanbul = new Istanbul();
+        Ankara ankara = new Ankara();
+        Adana adana = new Adana();
+        Hatay hatay = new Hatay();
+
+       // bir sonraki yer atamasi
+        ChainOfResponsibilityPattern chain = istanbul.setNextIl(ankara.setNextIl(adana.setNextIl(hatay)));
+        return chain;
+
+    }
+
+    public void getKargolama(EnumIl enumIl) {
+
+        gelenKargoBilgileriYazdir(enumIl);
+
+        if (enumIl.equals(this.enumIl)){
+            kargoTeslimBilgileriYazdir();
+        }
+        // dongu ye sokma
+        else if (getNextIl() != null){
+            getNextIl().getKargolama(enumIl);
+        }
+        else {
+            hizmetAlaniDisiYazdir(enumIl);
+        }
+    }
