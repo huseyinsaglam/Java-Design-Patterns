@@ -1,0 +1,13 @@
+************************* Command Design Pattern *************************
+- Command Design Pattern, veriye dayalı bir tasarım kalıbıdır (yani sonradan eklenen islevler olarak dusenebiliriz)
+     ve davranış kalıbı kategorisine girer.
+- Request, bir nesnenin altına komut olarak sarılır ve ınvoker nesnesine iletilir
+- Invoker nesnesi, bu komutu işleyebilecek uygun nesneyi arar ve komutu yürüten ilgili nesneye iletir
+
+Komut (Command) : Gerçekleştirilecek işlem için bir ara yüz tanımlar.
+Somut Komut (Concrete Command): Alıcı ve gerçekleştirilecek işlemler arasında bir bağ kurar,
+      alıcıda karşılık düşen işlemleri çağırarak çalıştırma eylemini gerçekleştirir.
+İstemci (Client): Komut nesnesini oluşturur ve metodun sonraki zamanlarda çağrılabilmesi için gerekli bilgiyi sağlar.
+Çağırıcı (Invoker): Metodun ne zaman çağrılacağını belirtir.
+Alıcı (Receiver):  Kullanıcı isteklerini gerçekleştirecek asıl metod kodlarını içerir.
+
