@@ -1,0 +1,5 @@
+************************* Interpreter Design Pattern *************************
+- Tercüman(Yorumlayıcı) kalıbı, dilbilgisini veya ifadesini değerlendirmenin bir yolunu sağlar.
+- Bu tür bir tasarım kalıbı davranışsal davranış tasarım kalıbı altına girer
+- Bu model, belirli bir bağlamı yorumlamayı soyleyen bir ifade arabiriminin uygulanmasını içerir
+- Bu model SQL ayrıştırma, sembol işleme motoru vb. islemlerde kullanılır.
