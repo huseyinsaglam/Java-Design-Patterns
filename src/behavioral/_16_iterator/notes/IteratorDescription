@@ -1,0 +1,6 @@
+************************* Iterator Design Pattern *************************
+- Iterator Design, Java'da çok yaygın olarak kullanılan tasarım desenidir.
+- Bu model, bir koleksiyon nesnesinin öğelerine, temel temsilini bilmeye gerek kalmadan sıralı bir
+şekilde erişmenin bir yolunu elde etmek için kullanılır.
+- Iterator Design, behavioral design pattern kategorisine girer.
+
