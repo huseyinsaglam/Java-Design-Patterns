@@ -3,3 +3,4 @@
 - Mediator Design Pattern, normalde farklı sınıflar arasındaki
  tüm iletişimleri işleyen ve gevşek bağlantı yoluyla kodun kolay bakımını destekleyen bir arabulucu sınıfı sağlar.
 - Mediator Design Pattern, behavioral design pattern kategorisine girer.
+
